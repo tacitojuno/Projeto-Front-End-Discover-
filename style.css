@@ -34,6 +34,7 @@ body{
 
   /*background: color image repeat position/size*/
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body *{ /* todos os elementos */
@@ -166,4 +167,15 @@ footer{ /* rodapé */
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* Media Queries */
+@media (min-width: 700px){
+  :root{
+    --bg-url: url(./Imagens/bg-desktop.jpg);
+  }
+
+  .light{
+    --bg-url: url(./Imagens/bg-desktop-light.png);
+  }
 }
